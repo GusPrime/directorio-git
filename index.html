@@ -2,11 +2,17 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /> <!--utf-8 = que los navegadores reconozcan textos y simbolos especiales-->
     <title>Mi primera pagina web ñato</title>
 </head>
-
+<style> 
+    a {
+        text-decoration: none; 
+    }
+</style>
+<!--con la etiqueta a y text decoration none, hacemos que no haya ninguna linea, ninguna decoración-->
 <body>
+    <a href="./galeria.html" target="_blank">Galeria de redes sociales</a> <!--Con la etiqueta "a" creamos enlaces de sitios web y podemos añadir imagenes-->
     <h1>Mi primer titulo</h1>
     <h2>Mi primer titulo</h2>
     <h3>Mi primer titulo</h3>
@@ -14,17 +20,46 @@
     <h5>Mi primer titulo</h5>
     <h6>Mi primer titulo</h6>
     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet architecto
-        consequuntur enim mollitia rerum in, minima nam, quaerat sunt atque
-        similique incidunt blanditiis error quis, ut assumenda magnam repellat
-        dolor
+        <strong> <!--Volver en negrita el texto-->
+            <i> <!--volver el texto a cursiva-->
+                <u> <!--Subrayar el texto-->
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet architecto
+                    consequuntur enim mollitia rerum in, minima nam, quaerat sunt atque
+                    similique incidunt blanditiis error quis, ut assumenda magnam repellat
+                    dolor
+                </u>
+            </i>
+        </strong>
     </p>
     <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shopsy-poster/t/p/z/small-one-piece-anime-poster-for-wall-decoratve-photo-poster-24-original-imagp2bjzsauhpv6.jpeg?q=90"
         alt="One piece" width="200" height="" />
 
-    <img src="./Nexon_MapleStory_DestinyRemastered-1920x1080.jpg" alt="MapleStory" width="" height="290" />
+    <img src="./imagenes/Nexon_MapleStory_DestinyRemastered-1920x1080.jpg" alt="MapleStory" width="" height="290" />
 
+    <div style="border: solid;">
+        <div>
+            <h1 style="border: solid red;">Mi primer div</h1>
+            <p style="border: solid blue;">Esto es un parrafo</p>
+        </div>
+        <div>
+            <img style="border: solid green;" src="./imagenes/lomo-saltado.png" alt="maple" width="300">
+            <img style="border: solid purple;" src="./imagenes/lomo-saltado.png" alt="lomo" width="300">
+        </div>
+    </div>
 
+    <section> <!--Similar al div, se usa para crear un empaquetado general-->
+        <div>
+            <a href="https://liquipedia.net/" style="border: solid;" target="_blank">
+                <img src="./imagenes/enlace.png" alt="" width="35" />
+                LIQUIPEDIA
+            </a>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+    <!--Galeria de redes sociales-->
 
 </body>
 
