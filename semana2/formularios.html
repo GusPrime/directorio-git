@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<nav>
+    <ul>
+        <li><a href="">Proyectos</a></li>
+        <li><a href="">Contacto</a></li>
+        <li><a href="">Compromiso</a></li>
+        <li><a href="">Nosotros</a></li>
+        <li><a href="">La Empresa</a></li>
+    </ul>
+</nav>
+
+<body>
+    <h1>Formulario<label for=""></label> de usuarios</h1>
+    <form action=""> <!--Si no colocamos ningun "method", por defecto se configura con un get-->
+        <p>
+            <input type="text" placeholder="Nombre" name="nombre" />
+            <!--todos los name aparecerán al momento de realizar un envio mediante un buttom-->
+        </p>
+        <p>
+            <input type="text" placeholder="Apellidos" name="apellidos" />
+        </p>
+        <p>
+            <input type="email" placeholder="Correo Electrónico" name="correo" />
+        </p>
+        <p>
+            <input type="date" placeholder="Fecha de nacimiento" name="fecha_de_nacimiento" />
+        </p>
+        <p>
+            <input type="number" placeholder="DNI" name="dni" />
+        </p>
+        <p>
+            <input type="tel" placeholder="Teléfono" name="telefono" />
+        </p>
+        <p>
+            <input type="password" placeholder="Contraseña" name="clave" />
+        </p>
+        <p>
+            <input type="text" placeholder="Dirección" name="direccion" />
+        </p>
+        <strong><u>
+                <p>Genero:</p>
+        </strong></u>
+        <p> Masculino
+            <input type="radio" name="genero" value="masculino" />
+        </p>
+        <p>Femenino
+            <input type="radio" name="genero" value="femenino" />
+        </p>
+        <p>Raritos
+            <input type="radio" name="genero" value="raritos" />
+        </p>
+        <p>Otros
+            <input type="radio" name="genero" value="otros" />
+        </p>
+        <input type="text" value="PERU" readonly /> <!--input de solo lectura-->
+
+        <strong><u>
+                <p>País:</p></strong></u>
+        <select name="pais" id="">
+            <option value="" disabled selected>Elige tu País</option>
+            <!--colocamos un nombre el cual no se podrá elegir-->
+            <option value="PE" selected>Perú</option>
+            <!--si colocamos "selectec" dentro de un value, este aparecerá por defecto-->
+            <option value="BO">Bolivia</option>
+            <option value="CL">Chile</option>
+            <option value="AR">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="CO">Colombia</option>
+            <option value="EC">Ecuador</option>
+            <option value="PN">Panama</option>
+            <option value="UR">Uruguay</option>
+            <option value="EN">Inglaterra</option>
+            <option value="UK">Reino Unido</option>
+            <option value="JP">Japón</option>
+        </select>
+
+        <strong><u>
+                <p>Provincia:</p>
+            </u></strong>
+        <select name="provincia" id="">
+            <option value="deshabilitado" disabled selected>Elige tu Provincia</option>
+            <option value="Madre de Dios">Madre de Dios</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Tumbes">Tumbes</option>
+            <option value="La Libertad">La Libertad</option>
+            <option value="Piura">Piura</option>
+            <option value="Ica">Ica</option>
+            <option value="Huancayo">Huancayo</option>
+            <option value="Ayacucho">Ayacucho</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Callao">Callao</option>
+            <option value="Lima" selected>Lima</option>
+            <option value="Huanuco">Huanuco</option>
+            <option value="Huancavelica">Huancavelica</option>
+        </select>
+        <strong><u>
+                <p>Cursos</p></strong></u>
+        <p>JavaScript
+            <input type="checkbox" name="curso_1" />
+        </p>
+        <p>HTML
+            <input type="checkbox" name="curso_2" />
+        </p>
+        <p>CSS
+            <input type="checkbox" name="curso_3" />
+        </p>
+        <p>REACT JS
+            <input type="checkbox" name="curso_4" />
+        </p>
+        <p> NEXT JS
+            <input type="checkbox" name="curso_5" />
+        </p>
+        <button type="submit">Enviar</button> <!--por formulario, maximo debe haber uno-->
+    </form>
+</body>
+
+</html>
+<!--Podemos usar input sin label, label ya está discontinuado.-->
