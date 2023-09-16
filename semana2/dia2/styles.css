@@ -1,0 +1,22 @@
+/*body{
+    background-color: blue;
+}*/
+/*Esto es un comentario en CSS*/
+/* control + } = comentario automatico */
+h1{
+    color: blue ;
+    font-size: 60px;
+    /* selector por elemento*/
+}
+
+.selector-clase{
+    color: red;
+    font-size: 30px;
+    /* selector por clase, RECOMENDADO */
+}
+
+#selector-id{
+    color: blueviolet;
+    font-size: 24px;
+    /* selector por id */
+}
