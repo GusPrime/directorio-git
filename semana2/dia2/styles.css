@@ -20,3 +20,218 @@ h1{
     font-size: 24px;
     /* selector por id */
 }
+
+/* HOVER */
+.boton-hover{
+    border: none;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: bisque;
+    transition: 2s ease;
+    width: 160px;
+    height: 60px;
+}
+
+.boton-hover:hover{
+    background-color: aquamarine;
+}
+/* invocamos los botones con el selector por CLASE */
+/* el botón :hover sirve para realizar una acción encima de otra acción */
+
+.div-hover:hover{
+    color: blue;
+    cursor: pointer;
+}
+/* Cursos: pointer -> sirve para que al colocar el mouse encima, aparezca una manito */
+
+.div-hover{
+    font-size: 25px ;
+}
+
+.link-hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+.link-hover:hover{
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------------------------- */
+/* child */
+
+.link-hover:child{
+    font-size: 30px;
+    color: orange;
+}
+
+/* LA PSEUDO CLASE HOVER FUNCIONA AL PASAR EL CURSOS ENCIMA Y LA PSEUDO CLASE 
+child FUNCIONA AL HACER CLIC */
+
+.link-hover:focus{
+    color: blueviolet;
+    border: 2px dotted #444;
+}
+
+/* focus y active */
+.input-focus:focus{
+    background-color: blue;
+    transition: 4s ease;
+}
+
+.input-active:active{
+    background-color: blueviolet;
+    transition: 4s ease;
+}
+/* --------------------------------- */
+
+/* first-child last-child nth() */
+.hijos-child p:first-child{
+    background-color: aqua;
+}
+/* Indicamos la primera fila a modificar */
+.hijos-child p:last-child{
+    background-color: red;
+}
+/* Indicamos la última fila que queremos modificar */
+
+.hijos-child p:nth-child(3){
+    background-color: bisque;
+}
+/* Indicamos una fila en especifico para modificar */
+.hijos-child p:nth-child(4){
+    background-color: antiquewhite;
+}
+
+.hijos-child p:nth-child(2n){
+    color: blue;
+}
+/* El valor "2N" sirve para modificar numeros pares a la vez */
+/* Podemos usar el valor "N" el cual indica "TODOS" para modificar todo el contenido hijos */
+
+.hijos-child p:nth-child(2n-1){
+    color: red;
+}
+/* De esta manera modificamos todos los numeros impares */
+
+/* ----------------------------------------------------------------------------------- */
+
+/* before */
+.prueba-antes-before::before {
+    content:'hola';
+    color: blue;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* El elemento "BEFORE" sirve para añadir elementos antes del contenido principal, esto podemos identificar ya que se colocan 4 puntos :: luego before */
+/* ---------------------------------------------------------------------- */
+.prueba-despues-after::after{
+    content: 'hola-after';
+    background-color: aqua;
+    color: red;
+    padding: 20px;
+    border-radius: 15px;
+}
+/* Funciona similar al elemento BEFORE, en este caso coloca el contenido delante */
+/* ---------------------------------------------------------------------- */
+
+/* first letter */
+.prueba-first-letter::first-letter{
+    color: red;
+    font-size: 35px;
+    text-decoration: underline;
+}
+/* Sirve para realizar una acción a la primera letra */
+/* ---------------------------------------------------------------------- */
+/* required */
+.css-validacion-input1:required{
+    border: 1px solid red;
+}
+/* Realiza una acción a todo aquello que tenga un "REQUIRED" y se queda establecido*/
+/* ---------------------------------------------------------------------- */
+
+/* valid */
+.css-validacion-input1:valid{
+    background-color: blue;  
+    color: white; 
+}
+/* Realiza una acción a todo lo que sea valido y no tenga un "REQUIRED", ESTE ELEMENTO TRABAJA CON EL 2REQUIRED"  */
+/* ---------------------------------------------------------------------- */
+
+/* invalid */
+.css-validacion-input1:invalid {
+    background-color: green;
+    color: white;
+}
+/* Realiza una acción a todo lo que sea invalido y tenga un "REQUIRED", ESTE ELEMENTO TRABAJA CON EL 2REQUIRED"  */
+/* ---------------------------------------------------------------------- */
+
+/* Utilizar multiples selectores */
+
+.padre ul li:nth-child(3){
+    background-color: orange;
+}
+/* Podemos utilizar multiples selectores a la vez */
+
+/* .padre ul .selecciona-este-li{
+    background-color: red;
+} */
+/* Tambien podemos realizarlo de esta manera, mucho mas simplificada */
+
+.padre li:nth-child(4){
+    background-color: bisque;
+}
+/* Tambien podemos realizarlo de esta manera, mucho mas simplificada */
+
+/* FORMA MAS RECOMENDADA USANDO UNA UNICA CLASE */
+.selecciona-este-li{
+    background-color: aquamarine;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+/* HEREDAR/INHERIT */
+
+.container{
+    color: blue;
+    font-size: 30px;
+    border: 1px solid green;
+}
+
+.child{
+    border: inherit;
+    font-size: initial;
+    /* con "initial" nuestro atributo toma el valor por defecto de HTML y lo aplica. */
+}
+/* Con esto podemos hacer que una clase/elemento HIJO herede los atributos del padre, utilizando "INHERIT" */
+/* --------------------------------------------------------------------------------------- */
+
+/* Cascada */
+.parrafo-cascada{
+    background-color: aqua;
+    color: #444;
+    padding: 10px;
+
+}
+
+/* Unidades de medida relativa y absoluta */
+/* absolutas = px = su valor no cambia */
+/* relativas = %, men, em, vw, vh = su valor cambia */
+.caja1{
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+}
+
+.caja2{
+    background-color: blueviolet;
+    width: 50%;
+    font-size: 30px;
+}
+
+.caja3{
+    background-color: yellowgreen;
+    width: 50%;
+    font-size: 1em;
+}
+
+/* rem = medida por defecto de html 16px */
+/* em = toma la medida del primer valor que encuentra */

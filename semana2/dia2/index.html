@@ -14,12 +14,78 @@
         }
     </style> este es un ejemplo de CSS dentro de HTML, no es una buena practica-->
 </head>
+<!-- selectores -->
 
 <body>
     <!--<p style="font-size: 30px;">Texto de Ejemplo</p> Este es otro ejemplo de CSS dentro de HTML-->
     <h1>Selector por elemento</h1>
+    <!-- <hr/> ESTA ETIQUETA SIRVE PARA CREAR UNA LINEA HORIZONTAL y un salto de página-->
     <h3 class="selector-clase">Selector por clase</h3>
+
     <p id="selector-id">Selector por ID</p>
+
+    <!-- pseudo clases -->
+    <h2>Pseudo clases</h2>
+    <button class="boton-hover">Botón con :hover</button>
+    <div class="div-hover">Este es un div con :hover</div>
+    <a class="link-hover" href="">Este es un link con :hover</a>
+    <p>Focus<input class="input-focus" type="text"></p>
+    <p>Active<input class="input-active" type="text"></p>
+    <h2>Hijos</h2>
+    <div class="hijos-child">
+        <p class="p">Parrafo 1</p>
+        <p class="p">Parrafo 2</p>
+        <p class="p">Parrafo 3</p>
+        <p class="p">Parrafo 4</p>
+        <p class="p">Parrafo 5</p>
+        <p class="p">Parrafo 6</p>
+    </div>
+    <h2>::antes/before</h2>
+    <div class="prueba-antes-before"> antes/before</div>
+    <h2 class="prueba-despues-after"> prueba despues after </h2>
+    <h2 class="prueba-first-letter"> Ejemplo de first letter</h2>
+
+    <form action="">
+        <input class="css-validacion-input1" type="text" placeholder="caja de Texto no requerido" />
+        <input class="css-validacion-input1" type="text" placeholder="caja de texto requerido" required />
+        <input type="submit" />
+        <!-- un input con el atributo "REQUIRED" debe ser si o si llenado antes de enviar -->
+    </form>
+
+    <!-- Selectores combinados y multiples -->
+    <div class="padre">
+        <ul>
+            <li>Item 1</li>
+            <li class="selecciona-este-li">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <!-- Herencia -->
+    <h2>Herencia</h2>
+    <div class="container">
+        <p>Parrafo padre</p>
+        <div class="child">
+            <p>parrafo hijo</p>
+        </div>
+    </div>
+
+    <!-- Cascada -->
+    <h2>Cascada</h2>
+    <div class="parrafo-cascada">
+        Mi Parrafo
+    </div>
+
+    <!-- Unidades de medida -->
+    <h2>Unidades de medida</h2>
+    <div class="caja1">Caja 1</div>
+    <div class="caja2">Caja 2
+        <div class="caja3">Caja 3</div>
+    </div>
+
+
+
 </body>
 
 </html>
