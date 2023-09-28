@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+div{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    /* display: inline-block; */
+    margin: 10px;
+
+    display: flex; /* HABILITAR OPCIONES EXTRAS */
+    justify-content: center; /* CENTRAR HORIZONTAL */
+    align-items: center; /* CENTRAR VERTICAL */
+}
+
+section{
+    display: flex;
+    /* Al usar display: flec, activamos algunos atributos extras */
+
+    /* Justify-content -> sirve para alinear de forma horizontal */
+    justify-content: center;
+
+    /* Align-items -> sirve para alinear de forma vertical */
+    align-items: center;
+    border: solid red;
+    /* vh = viewport height */
+    height: 100vh;
+}
