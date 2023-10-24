@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------- */
+/* TAILWIND = clases reutilizables, ESTO SE USA PARA TODO AQUELLO QUE SE REPITE */
+.flex{
+    display: flex;
+}
+/* ------------------------------------------- */
+
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.padding-25{
+    padding: 25px;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.bradius-20{
+    border-radius: 20px;
+}
+
+/* .cursos__pointer {
+    cursor: pointer;
+} */
+
+.container{
+    background-color: hsl(206, 94%, 87%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_box{
+    background-color: white;
+    height: 80vh;
+    width: 55%;
+    gap: 60px;
+}
+
+.container_box > div:first-child{
+    width: 25%;
+    background:url("../assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+}
+/* backgroun-size: cover -> para que cubra todo el cuadro y no queden espacios en blanco */
+/* backgroun-repet: no-repeat -> CON ESTO no repetimos la imagen de fondo */
+/* div:first-child -> sirve para escoger al primer hijo de un div */
+
+.text-white{
+    color: #fff;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.step__container{
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.step__circle{
+    background-color:hsl(243, 100%, 62%) ;
+    border: solid 1px hsl(206, 94%, 87%);
+    padding: 9px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.step__circle:hover{
+    background-color:hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+}
+
+.step__title{
+    color: hsl(231, 11%, 63%);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.step__description{
+    font-weight: 700;
+    margin-top: 5px;
+    letter-spacing: 1px; /* espaciado entre letra y letra */
+}
+
+.tittle__info{
+    font-size: 36px;
+}
+
+.description__info{
+    margin-top: 10px;
+    color:  hsl(231, 11%, 63%);
+    
+}
+
+.container__input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.container__input > input{
+    font-family: "Ubuntu", sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: solid 1px hsl(217, 100%, 97%);
+    outline: none; 
+    /* con outline none eliminamos las propiedades de linea que tenga algún elemento */
+}
+
+

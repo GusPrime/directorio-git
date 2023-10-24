@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.nft-section1{
+    background-color: hsl(217, 54%, 11%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nft-box1{
+    /* border: solid red; */
+    box-shadow: 10px 10px 30px -15px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 30px -15px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 30px -15px rgba(0, 0, 0, 0.75);
+    width: 20%;
+    padding: 30px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.nft-img1{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.nft-title1{
+    color: white;
+    margin-top: 20px;
+}
+
+.nft-parrafo1{
+    color:hsl(215, 51%, 70%) ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nft-caja-alinear{
+    /* border: solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-span1{
+    font-weight: 700;
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-span2{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.nft-borde{
+    margin-top: 25px;
+}
+
+.nft-foto1{
+    margin-right: 5px;
+}
+
+.nft-foto2{
+    margin-right: 5px;
+}
+
+.nft-png{
+    margin-top: 15px;
+    border: solid white 2px;
+    border-radius: 50px;
+}
+
+.nft-creation{
+    color: hsl(215, 51%, 70%) ;
+}
+
+.nft-jules{
+    color: white;
+    font-weight: 600;
+}
+.nft-final{
+    /* border: solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.caja-final{
+    margin-left: 15px;
+}
