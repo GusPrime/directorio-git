@@ -124,6 +124,102 @@ body{
     border: solid 1px hsl(217, 100%, 97%);
     outline: none; 
     /* con outline none eliminamos las propiedades de linea que tenga algún elemento */
+    cursor: pointer;
 }
+
+.container__input > span{
+    color:hsl(213, 96%, 18%);
+}
+
+.container__input > input:hover{
+    border: solid 1px hsl(243, 100%, 62%);
+}
+
+.container__button{
+    /* border: solid red; */
+    margin-top: 180px;
+    text-align: right;
+}
+
+.button__step{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        height: auto;
+    }
+
+    .bradius-20{
+        padding: 0;
+    }
+
+    .padding-20{
+        padding: 0;
+    }
+
+    .bradius-20{
+        border-radius: 0;
+    }
+
+
+    .container_box{
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        border-radius: 0;
+        gap: 0;
+        background-color: hsl(228, 100%, 84%);
+        height: 100vh;
+    }
+
+
+    .step__circle{
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container_box > div:first-child{
+        width:100% ;
+        background: url("../assets/images/bg-sidebar-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .step__title{
+        display: none;
+    }
+}
+    .step__description{
+        display: none;
+    }
+
+    .container__info{
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+        margin-top: -50px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .container__button{
+        margin-top: 10%;
+    }
+
 
 
