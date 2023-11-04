@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+}
+
+.text_align{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-areas:"header menu menu" "hero hero hero"
+    "main empty image"
+    "main empty extra"
+    "banner banner banner";
+    
+}
+
+
+.header{
+    background-color: rgb(6, 6, 90);
+    grid-area: header;
+    height: 5vh;
+}
+
+.menu{
+    background-color: rgb(255, 106, 106);
+    grid-area: menu;
+}
+
+.hero{
+    background-color: skyblue;
+    grid-area: hero;
+    height: 60vh;
+}
+
+.main{
+    background-color: black;
+    grid-area: main;
+    height: 20vh;
+}
+
+.empty{
+    background-color: #fff;
+    grid-area: empty;
+}
+
+.image{
+    background-color: greenyellow;
+    color: #000;
+    grid-area: image;
+}
+
+.extra{
+    background-color: green;
+    grid-area: extra;
+}
+.banner{
+    background-color: rgb(239, 187, 29);
+    grid-area: banner;
+    height: 15vh;
+}
+
+
+@media only screen and (max-width: 600px){
+
+.container{
+    grid-template-areas: "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "empty"
+    "extra"
+    "image"
+    ;
+}
+
+.header{
+    grid-area: header;
+    height: 10vh !important;
+}
+
+.menu{
+    grid-area: menu;
+    height: 15vh !important;
+}
+
+.hero{
+    grid-area: hero;
+    height: 30vh;
+}
+
+.main{
+    grid-area: main;
+    height: 25vh;
+}
+
+.banner{
+    grid-area: banner;
+    height: 20vh;
+}
+
+.empty{
+    grid-area: empty;
+    height: 10vh;
+}
+
+.extra{
+    grid-area: extra;
+    height: 15vh;
+}
+
+.image{
+    grid-area: image;
+    height: 15vh;
+}
+
+}
