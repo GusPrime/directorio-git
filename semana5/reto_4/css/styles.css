@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Alata", sans-serif;
+}
+
+.principal__section{
+    background: url("../assets/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    color: #fff;
+}
+
+.hero > div{
+    border: solid #fff;
+    padding: 10px;
+    width: 50% ;
+    margin-top: 100px;
+    padding: 60px;
+    word-wrap: break-word;
+}
+
+
+.hero > div > h1{
+    color: white;
+    font-weight: 400;
+    font-size: 80px ;
+}
+
+.article__section{
+    display: flex;
+    padding: 60px;
+    justify-content: center;
+}
+
+.article__container{
+    align-self: end;
+    width: 30%;
+    margin-left: -150px;
+    background-color: #fff;
+    padding: 60px 60px 0 60px;
+}
+
+.article__container h2 {
+    font-size: 40px;
+    font-family: "Josefine Sans", sans-serif;
+    padding-bottom: 40px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 70vh 70vh;
+    padding: 60px;
+}
+
+.gallery div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    margin: 20px;
+}
+
+.earth{
+    background-image:url("../assets/desktop/image-deep-earth.jpg") ;
+}
+
+.arcade{
+    background-image:url("../assets/desktop/image-night-arcade.jpg") ;
+}
+
+.soccer{
+     background-image:url("../assets/desktop/image-soccer-team.jpg") ;
+}
+
+.race{
+     background-image:url("../assets/desktop/image-grid.jpg") ;
+}
+
+.gallery div h3{
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    width: 20%;
+}
